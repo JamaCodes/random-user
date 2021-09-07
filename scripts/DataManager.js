@@ -1,9 +1,9 @@
-export const getUsers = () => {
+export const getUser = () => {
 
     return fetch("https://randomuser.me/api/")
     .then(response => response.json())
     .then(parsedResponse => {
         // do something with response here
-        return parsedResponse;
+        console.log("get user", parsedResponse)
     })
 }
