@@ -26,5 +26,14 @@ const startUser = () => {
 }
 startUser();
 
+const applicationElement = document.querySelector(".userlist");
+applicationElement.addEventListener("click", getuserbutton => {
+
+	if(getuserbutton.target.id.startsWith("getuser")){
+		console.log("post clicked",getuserbutton.target.id.split("--"))
+		console.log("the id is", getuserbutton.target.id.split("--")[0])
+	}
+})
+
 
 
